@@ -1,0 +1,46 @@
+body{
+    display:flex;
+    flex-direction: column;
+    flex:auto;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: url('https://fonts.google.com/specimen/Figtree');
+    width:1440;
+    height:960;
+}
+#container{
+    display:flex;
+    flex-direction: column;
+    border: 5px black solid;
+    border-radius: 25px;
+    width:384px;
+    height:522px;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#publishDate,#text{
+    color:hsl(0, 0%, 42%);
+}
+
+#topic,#learning, p{
+    color:hsl(0, 0%, 7%);
+} 
+#user{
+    display:flex;
+}
+p{
+    font-size: 16px;
+}
+
+#top{
+    width:336px;
+    height:200px;
+}
+
+
+#allText{width:336;
+height:194;}
