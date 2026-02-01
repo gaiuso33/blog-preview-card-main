@@ -1,36 +1,62 @@
+@import
+url("https://fonts.google.com/specimen/Figtree");
+
 body{
     display:flex;
     flex-direction: column;
-    flex:auto;
     justify-content: center;
     align-items: center;
     background-color: hsl(47, 88%, 63%);
-    font-family: url('https://fonts.google.com/specimen/Figtree');
-    width:1440;
-    height:960;
+    font-family: 'Figtree', sans-serif;
+    /* width:1440px;
+    height:960px; */
 }
 #container{
     display:flex;
+    flex:auto;
     flex-direction: column;
-    border: 5px black solid;
+    border: 2px black solid;
     border-radius: 25px;
     width:384px;
     height:522px;
     background-color: hsl(0, 0%, 100%);
     justify-content: center;
     align-items: center;
+    box-shadow: 7px 7px;
+}
+
+#publishDate{
+    margin-top: 10px;
+}
+#text{
+    margin:10px 0px;
+    font-size: 16px;
+}
+#publishDate,#text{
+    color:hsl(0, 0%, 42%);
     
 }
 
-#publishDate,#text{
-    color:hsl(0, 0%, 42%);
-}
-
-#topic,#learning, p{
+#topic{
     color:hsl(0, 0%, 7%);
+    margin:15px 0px;
+    font-weight: 800;
+    font-size: 20px;
+}
+#learning, p{
+    color:hsl(0, 0%, 7%);
+    margin:5px;
+    margin-left:0px;
 } 
 #user{
     display:flex;
+    margin:5px 0px;
+    margin-left:0px;
+    align-items: center;
+}
+#user p{
+    font-weight:800;
+    margin-left: 5px;
 }
 p{
     font-size: 16px;
@@ -39,8 +65,39 @@ p{
 #top{
     width:336px;
     height:200px;
+    margin-top: -70px;
+    border-radius: 10px;
 }
 
 
-#allText{width:336;
-height:194;}
+#allText{
+    width:336px;
+    height:194px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#learning{
+    padding:7px;
+    margin:5px;
+    margin-top:20px;
+    margin-left:0px;
+    width: max-content;
+    background-color: hsl(47, 88%, 63%);
+    border-radius:4px;
+    font-weight:600;
+}
+#avatar{
+    width:30px;
+}
+
+#topic:hover{
+    color:hsl(47, 88%, 63%);
+    
+}
+.attribution{
+    display:flex;
+    flex-direction: column;
+
+}
